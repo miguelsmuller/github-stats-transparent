@@ -113,6 +113,7 @@ class Queries(object):
             field: UPDATED_AT,
             direction: DESC
         }},
+        isArchived: false,
         isFork: false,
         after: {"null" if owned_cursor is None else '"'+ owned_cursor +'"'}
     ) {{
